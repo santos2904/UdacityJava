@@ -12,11 +12,17 @@ public class ListOfPictures
         gallery.add(new Picture("gaugin1.jpg"));
         gallery.add(new Picture("monet1.jpg"));
         gallery.add(new Picture("seurat1.jpg"));
-
-        // Your code here
-
-        System.out.println("Tallest height: "
-                           + tallest.getHeight());
+        
+        // Your code here        
+        Picture tallest = gallery.get(0);
+        for (int i = 1; i < gallery.size(); i ++) {
+            Picture pic = gallery.get(i);
+            if (pic.getHeight() > tallest.getHeight()) {
+                tallest = pic;
+            }
+        }
+        System.out.println("Tallest height: " 
+           + tallest.getHeight());
         tallest.draw();
     }
 }

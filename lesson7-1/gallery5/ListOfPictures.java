@@ -12,8 +12,13 @@ public class ListOfPictures
         gallery.add(new Picture("monet1.jpg"));
         gallery.add(new Picture("monet2.jpg"));
         gallery.add(new Picture("renoir1.jpg"));
-
+        
         // Your code here
+        int sum = 0;
+        
+        for (Picture pic : gallery) {
+            sum = sum + pic.getWidth();
+        }
 
         System.out.println("Sum of widths: " + sum);
     }
