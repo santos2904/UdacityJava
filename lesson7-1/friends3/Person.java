@@ -1,14 +1,12 @@
-// BlueJ project: lesson7/friends3
 
 import java.util.ArrayList;
 
-public class Person
-{
+public class Person {
+
     private String name;
     private ArrayList<String> friends;
 
-    public Person(String name)
-    {
+    public Person(String name) {
         this.name = name;
         friends = new ArrayList<String>();
     }
@@ -17,18 +15,16 @@ public class Person
      * Adds the given friend to this Person's friends list.
      * @param friend the friend to add.
      */
-    public void addFriend(Person friend)
-    {
+    public void addFriend(Person friend) {
         friends.add(friend.name);
     }
 
     /**
      * Gets a list of all of this Person's friends.
-     * @return the names of the friends separated by a comma and a space.
-     *     e.g. "Sara, Cheng-Han, Cay"
+     * @return the names of the friends separated by a comma and a space. e.g.
+     * "Sara, Cheng-Han, Cay"
      */
-    public String getFriends()
-    {
+    public String getFriends() {
         String friendsWithBrackets = friends.toString();
         return friendsWithBrackets.substring(1, friendsWithBrackets.length() - 1);
     }
@@ -38,8 +34,7 @@ public class Person
      * @param separator string to put between names.
      * @return the names of the friends.
      */
-    public String getFriends(String separator)
-    {
+    public String getFriends(String separator) {
         // TODO:
         // Create a string with all the names separated by separator.
         // make sure that there is not an extra trailing separator.
@@ -48,14 +43,22 @@ public class Person
         // Cay#Cheng-Han
         // not
         // Cay#Cheng-Han#
+        String friendSep = "";
+        for (int i = 0; i < friends.size(); i++) {
+            if (i > 0) {
+                friendSep = friendSep + separator + friends.get(i);
+            } else {
+                friendSep = friendSep + friends.get(i);
+            }
+        }
+        return friendSep;
     }
 
     /**
      * Gets the number of friends this Person has.
      * @return the number of friends.
      */
-    public int getNumFriends()
-    {
+    public int getNumFriends() {
         return friends.size();
     }
 
@@ -64,8 +67,7 @@ public class Person
      * @param i the index of the friend you want to get.
      * @return the ith friend's name.
      */
-    public String getFriend(int i)
-    {
+    public String getFriend(int i) {
         return friends.get(i);
     }
 }
