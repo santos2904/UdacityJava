@@ -34,7 +34,10 @@ public class Person
         // Implement the unfriend method.
         // you can use the find(Person friend) method to get
         // the index of a friend (Code below).
-
+        int nonFriendIndex = find(nonFriend);
+        if (nonFriendIndex != -1) {
+            friends.remove(nonFriendIndex);
+        }
     }
 
     /**
