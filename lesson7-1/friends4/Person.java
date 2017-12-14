@@ -33,7 +33,12 @@ public class Person {
      * "Sara, Cheng-Han, Cay"
      */
     public String getFriends() {
-        return getFriends(", ");
+        String withBrackets = friends.toString();
+		return withBrackets.substring(1, withBrackets.length() -1);
+    }
+    
+    public String toString() {
+        return name;
     }
 
     /**
