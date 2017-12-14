@@ -1,6 +1,6 @@
 // BlueJ project: lesson7/friends5
 
-// Implement the unfriend method.
+// Implement the unfriend method. *update*
 
 import java.util.ArrayList;
 
