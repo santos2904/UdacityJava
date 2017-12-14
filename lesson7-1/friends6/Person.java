@@ -1,5 +1,3 @@
-// BlueJ project: lesson7/friends6
-
 // Implement the talkTo method
 
 import java.util.ArrayList;
@@ -28,6 +26,11 @@ public class Person
         // are already in it.
         // Make sure that they won't appear twice in the list.
         // Don't change the friends list if the person is not already in it.
+        int index = find(person);
+        if (index != -1) {
+            friends.remove(index);
+            friends.add(0, person);
+        }
     }
 
     /**
@@ -59,7 +62,7 @@ public class Person
      */
     public int find(Person friend)
     {
-        for (int i = 0; i < friends.size; i++)
+        for (int i = 0; i < friends.size(); i++)
         {
             if (friends.get(i).equals(friend))
             {
