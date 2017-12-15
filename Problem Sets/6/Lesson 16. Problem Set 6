@@ -39,4 +39,41 @@ public class ListOfVerticalPictures {
     }
 }
 
-5.
+5. Complete the code to get the size of an array list named palette. 
+A: int size = palette.size();
+
+6. An ArrayListof Colors named palettehas been populated with some unknown number of colors.
+   Complete the line of code below to get the last element in the ArrayList.
+A: Color color = palette.get(palette.size() -1);
+
+7. 
+// Complete the given class to shift the first picture (the one at index 0)
+// to the end of the array list and  display the pictures object in the modified list
+// horizontally as was done in the lesson.  Put 10 pixels between pictures.  The first
+// picture should be 10 pixels from the left edge of the screen as well.
+// You can find the pictures required in in the bluej project
+
+import java.util.ArrayList;
+
+public class ShiftFirstToEnd {
+    public static void main(String[] args) {
+        ArrayList<Picture> gallery = new ArrayList<Picture>();
+        gallery.add(new Picture("degas1.jpg"));
+        gallery.add(new Picture("gaugin1.jpg"));
+        gallery.add(new Picture("monet1.jpg"));
+        gallery.add(new Picture("monet2.jpg"));
+        gallery.add(new Picture("renoir1.jpg"));
+
+        // TODO 
+        gallery.add(gallery.get(0));
+        gallery.remove(0);
+        int pixels = 0;
+        for (Picture pic : gallery) {
+            pixels = pixels + 10;
+            pic.translate(pixels, 0);
+            pixels = pic.getMaxX();
+            pic.draw();
+        }  
+    }
+}
+
