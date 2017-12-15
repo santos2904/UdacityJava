@@ -1,0 +1,11 @@
+Lesson 16: Problem Set 6
+
+1. Write one line of code to declare and instantiate an ArrayList of Color objects using the Color class from the lesson.  Call the variable palette.
+A: ArrayList<Color> palette = new ArrayList<Color>();
+
+2. Write the code to add Color.RED to an ArrayList of Colors named palette.
+A: palette.add(Color.RED);
+
+3. An Arraylist of Colors named palette has been populated with 9 colors. Complete the line of code below to get the last element in the ArrayList.
+A: Color color = palette.get(8) 
+// array index starts at 0
