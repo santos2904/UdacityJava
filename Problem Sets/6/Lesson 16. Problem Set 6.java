@@ -102,6 +102,18 @@ public class DisplayLastPictures
 9. Find index of next to last element in an array list named palette.
 A: int index = palette.size()-2;
 
+10. What will this code segment print?
+ArrayList<String> names = new ArrayList<String>();
+names.add("Bob");
+names.add(0, "Ann");
+names.remove(1);
+names.add("Cal");
+
+System.out.println(names);
+
+A: Ann, Cal
+
+11. 
 
 
 
