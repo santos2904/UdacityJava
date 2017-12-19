@@ -10,8 +10,7 @@ A: palette.add(Color.RED);
 A: Color color = palette.get(8) 
 // array index starts at 0
 
-4. 
-// Complete the given class to display the picture object vertically
+4. // Complete the given class to display the picture object vertically
 // (rather than horizontally).
 // You can find the pictures required in the bluej project
 // Place the first picture so that the top of the picture is 10 pixels below 
@@ -46,8 +45,7 @@ A: int size = palette.size();
    Complete the line of code below to get the last element in the ArrayList.
 A: Color color = palette.get(palette.size() -1);
 
-7. 
-// Complete the given class to shift the first picture (the one at index 0)
+7. // Complete the given class to shift the first picture (the one at index 0)
 // to the end of the array list and  display the pictures object in the modified list
 // horizontally as was done in the lesson.  Put 10 pixels between pictures.  The first
 // picture should be 10 pixels from the left edge of the screen as well.
@@ -77,8 +75,7 @@ public class ShiftFirstToEnd {
 	}
 }
 
-8.
-// Complete the given class to display the last picture in the array list
+8. // Complete the given class to display the last picture in the array list
 // The required pictures are in the BlueJ project
 
 import java.util.ArrayList;
@@ -113,7 +110,33 @@ System.out.println(names);
 
 A: Ann, Cal
 
-11. 
+11. // Complete this class to do the following.
+// 1. Define and create an ArrayList of Strings called animals
+// 2. Add the string "ape"
+// 3. Add the string "dog"
+// 4. Add the string "horse"
+// 5. print the arraylist
+
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class AddTester
+{
+    public static void main(String[] args)
+    {
+        // TODO: Define and create an ArrayList of Strings called animals
+        ArrayList<String> animals = new ArrayList<String>();
+
+        // TODO: Add the strings "ape", "dog", "horse"
+        animals.add("ape");
+        animals.add("dog");
+        animals.add("horse");
+        
+        System.out.println(animals);
+        System.out.println("Expected: [ape, dog, horse]");
+    }
+}
+
 
 
 
