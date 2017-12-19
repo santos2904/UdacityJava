@@ -63,8 +63,8 @@ public class ShiftFirstToEnd {
         gallery.add(new Picture("monet1.jpg"));
         gallery.add(new Picture("monet2.jpg"));
         gallery.add(new Picture("renoir1.jpg"));
-
-        // TODO 
+		
+		// TODO 		
         gallery.add(gallery.get(0));
         gallery.remove(0);
         int pixels = 0;
@@ -73,7 +73,35 @@ public class ShiftFirstToEnd {
             pic.translate(pixels, 0);
             pixels = pic.getMaxX();
             pic.draw();
-        }  
+		}
+	}
+}
+
+8.
+// Complete the given class to display the last picture in the array list
+// The required pictures are in the BlueJ project
+
+import java.util.ArrayList;
+
+public class DisplayLastPictures
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Picture> gallery = new ArrayList<Picture>();
+        gallery.add(new Picture("degas1.jpg"));
+        gallery.add(new Picture("gaugin1.jpg"));
+        gallery.add(new Picture("monet1.jpg"));
+        gallery.add(new Picture("monet2.jpg"));
+        gallery.add(new Picture("renoir1.jpg"));
+
+        // TODO display the last picture in the array list
+        gallery.get(gallery.size() -1).draw();
     }
 }
+
+9. Find index of next to last element in an array list named palette.
+A: int index = palette.size()-2;
+
+
+
 
