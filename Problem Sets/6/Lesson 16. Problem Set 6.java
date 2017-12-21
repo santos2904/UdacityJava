@@ -273,4 +273,53 @@ public class ReversePrinter
 	 }
 }
 
+17. // Complete the method in this class to print the length of each string
+// all on one line separated by spaces.
+
+import java.util.ArrayList;
+
+public class ArrayListUtil
+{
+    /**
+     * prints length of each string in the arraylist all on one line
+     * @param text the array list to process
+     */
+     public void getLengths(ArrayList<String> text)
+     {
+         // TODO: Use a loop to print the length of each string all on one line
+         // separated by spaces
+         for (String string : text) {
+             int length = string.length();
+             System.out.print(length + " ");
+         }
+     }
+}
+
+18. // Complete the method in this class to return the number of strings
+// that start with the target
+
+import java.util.ArrayList;
+
+public class Counter
+{
+    /**
+     * Gets the number of strings that starts with the target
+     * @param text the array list to process
+     * @param target the desired letter
+     * @return the count of strings starting with target
+     */
+     public int getCount(ArrayList<String> text, String target)
+     {
+         // TODO: Adapt an ArrayList algorithm to return the number of Strings that
+         // start within the target
+		 int count = 0;
+		 for(String word : text) {
+			 if(word.startsWith(target)) {
+				 count ++;
+			 }
+		 }
+		 return count;
+	 }
+}
+
 
