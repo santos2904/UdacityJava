@@ -51,6 +51,14 @@ public class ArrayListMethods {
     public void replaceWithLargerNeighbor() {
 
         // TODO: Replace all but the first and last elements with the larger of its two neighbors
+		for (int i = 1; i < list.size() - 1; i ++) {
+			if (list.get(i - 1).compareTo(list.get(i + 1)) > 0) {
+				list.set(i, list.get(i - 1));
+				else {
+					list.set(i, list.get(i + 1);
+				}
+			}
+		}
 
     /**
      * Gets the number of duplicates in the list. Be careful to only count each
