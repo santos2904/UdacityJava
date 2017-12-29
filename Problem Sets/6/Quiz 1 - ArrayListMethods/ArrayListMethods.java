@@ -90,8 +90,14 @@ public class ArrayListMethods {
      */
     public void xyzToFront() {
         int insertAt = 0;
-
-        // TODO:  Move any word that starts with x, y, or z to the front of the ArrayList, but otherwise preserves the order
+        int length = list.size();
+        for (int i = 0; i < length; i++) {
+            //if ("xyz".contains(list.get(i).substring(0,1))) {
+            if (list.get(i).startsWith("x") || list.get(i).startsWith("y") || list.get(i).startsWith("z")) {
+                list.add(insertAt, list.remove(i));
+                insertAt++;
+            }
+        }
     }
 
     /**
