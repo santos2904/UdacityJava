@@ -18,6 +18,8 @@ import java.util.ArrayList;
 public class TripPlan
 {
     // TODO: add instance variable here
+    private ArrayList<String> cities;
+    
 
     /**
      * Constructs an empty trip.
@@ -25,6 +27,7 @@ public class TripPlan
     public TripPlan()
     {
         // TODO: Initialize the instance variable
+        cities = new ArrayList<String>();
     }
 
     /**
@@ -34,6 +37,7 @@ public class TripPlan
     public void addCity(String cityName)
     {
         // TODO: Write code to add a city to the array list instance variable
+        cities.add(cityName);
     }
 
     /**
@@ -43,7 +47,7 @@ public class TripPlan
     public String toString()
     {
 
-        return ...
+        return "TripPlan" + cities.toString().replace(", ", ",");
     }
 
     /**
@@ -53,13 +57,15 @@ public class TripPlan
     public void removeCity(String cityName)
     {
         // TODO: Write code to remove a city to the array list instance variable
+        cities.remove(cityName);
     }
 
     /**
      * Reverses the elements in the itinerary.
      */
-    public void reverse()
-    {
-
+    public void reverse() {
+        for (int i = 0; i < cities.size(); i++) {
+            cities.add(0, cities.remove(i));
+        }
     }
 }
