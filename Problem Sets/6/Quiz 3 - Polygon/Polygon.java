@@ -50,7 +50,13 @@ public class Polygon {
         return perimeter;
     }
 
-    public void draw() {
-
-    }
+	public void draw()
+	{
+		Line line = new Line(polygon.get(0).getX(), polygon.get(0).getY(), polygon.get(polygon.size() - 1).getX(), polygon.get(polygon.size() - 1).getY());
+		line.draw();
+		for (int i = 1; i < polygon.size(); i ++)
+		{
+			new Line(polygon.get(i - 1).getX(), polygon.get(i - 1).getY(), polygon.get(i).getX(), polygon.get(i).getY()).draw();
+		}
+	}
 }
