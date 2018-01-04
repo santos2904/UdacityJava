@@ -36,3 +36,9 @@ for (int i = 0; i < 2; i++) {
 //What does primes contain after running this loop?
 
 A: 2, 3, 5, 3, 2
+
+//5. Put in the First and Last Spacces
+int[] values = new int[10];
+
+A: 	values[0] = 10;
+	values[value.length - 1] = 10;
