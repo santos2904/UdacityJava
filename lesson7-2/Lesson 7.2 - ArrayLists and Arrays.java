@@ -25,7 +25,7 @@ for (double value : values) {
 // enchanced for loop
 
 //3. Declare an Array Containing the First Five Primes in one line
-A: int prime[] = { 2, 3, 5, 7, 11 };
+int prime[] = { 2, 3, 5, 7, 11 };
 
 //4. How does this loop Modify the Array?
 int[] primes = { 2, 3, 5, 7, 11 };
@@ -35,11 +35,25 @@ for (int i = 0; i < 2; i++) {
 }
 //What does primes contain after running this loop?
 
-A: 2, 3, 5, 3, 2
+2, 3, 5, 3, 2
 
 //5. Put in the First and Last Spacces
 int[] values = new int[10];
 
-A: 	values[0] = 10;
-	values[value.length - 1] = 10;
-	// values[9] = 10;
+values[0] = 10;
+values[value.length - 1] = 10;
+// values[9] = 10;
+	
+//6. How would you declare an array of Strings with space for 10 values?
+String[] array = new String[10];
+
+// How would you declare an array of Strings that contains two values: "yes" and "no"?
+String[] array = {"yes", "no"};
+
+//7. Best Enchanced for loop
+for (int i = 0; i < values.length; i++) {
+	{if (values[i] == 0) {
+		counter++;
+	}
+}
+	
