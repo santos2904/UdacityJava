@@ -29,7 +29,11 @@ public class HomeworkScores
         // TODO: Calculate the average score.
         // Add up all the scores and divide by the number of scores.
         // return the result.
-        return 0;
+		double average = 0;
+		if (currentSize > 0) {
+			average = sumScores() / currentSize;
+		}
+        return average;
     }
 
     public void readScores(Scanner userInput)
