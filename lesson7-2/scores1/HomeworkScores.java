@@ -27,6 +27,11 @@ public class HomeworkScores
         // Use the scanner passed in in the argument userInput.
         // Save each score that is read in the partially filled scores array.
         // Make sure not to lose track of how filled the array is.
+		while (userInput.hasNextDouble()) {
+			double number = userInput.nextDouble();
+			scores[currentSize] = number;
+			currentSize++;
+		}
     }
 
     /**
