@@ -42,3 +42,4 @@ int[] values = new int[10];
 
 A: 	values[0] = 10;
 	values[value.length - 1] = 10;
+	// values[9] = 10;
