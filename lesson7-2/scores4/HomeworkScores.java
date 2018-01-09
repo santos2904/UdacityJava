@@ -40,6 +40,7 @@ public class HomeworkScores
         // YOUR CODE HERE
         // Remove the lowest score.
         // You can use any of the other methods in this class.
+		remove(find(lowScore()));
     }
 
     /**
