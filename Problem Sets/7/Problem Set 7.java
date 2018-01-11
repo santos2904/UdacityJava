@@ -68,4 +68,31 @@ while(in.hasNextDouble()) {
 	}
 }
 
-15.
+15. Complete this code to swap the element 0 and 1
+int[] scores = {65, 71, 68, 85, 87, 89, 78};
+
+int temp = scores[0];
+scores[0] = scores[1];
+scores[1] = temp;
+
+16. // Complete the method in this class. It returns a string with the elements of the array
+// in reverse order separated by a space. If the array looks like this [1, 2 ,3 ,4], your
+// output will look like this:
+// 4 3 2 1
+
+public class ArrayUtil
+{
+    /**
+     * Returns a string with the elements of the array in reverse order separated by a space
+     * @param values the array to reverse
+     * @return the string containing the elements in reverse order
+     */
+    public String inReverse(int[] values) {
+        String message ="";
+        for (int value : values) { //finish the loop header
+            message = value + " " + message;// TODO: concatenate the elements to message in reverse order
+        }
+        return message;
+    }
+}
+
