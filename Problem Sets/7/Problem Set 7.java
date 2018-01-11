@@ -33,5 +33,11 @@ the indexes can range from 0 to 11.
 Complete the code to get the length of the array. You can assume the scores is not null.
 int length = scores.length;
 
-10. Write code to assign 98 to the last element of the array "scores". scores is of unknown length.
+10. You have an in array variable scores of unknown length.
+Write code to assign 98 to the last element of the array "scores". scores is of unknown length.
 scores[scores.legnth - 1] = 98;
+
+11. You have an int array variable scores of unknown length.
+Complete the statement to print the first element of the array (that is, the element ad index 0).
+You can assume the scores variable is not null.
+System.out.println(scores[0]);
