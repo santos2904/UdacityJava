@@ -22,3 +22,7 @@ System.out.println(temperatures[9]);
 
 6. Write the statement to assign 95 to the first element of an int array scores
 scores[0] = 95;
+
+7.  Complete the code to initialise an array containing the prime numbers less than 10.
+int[] primes = {2, 3, 5, 7};
+
