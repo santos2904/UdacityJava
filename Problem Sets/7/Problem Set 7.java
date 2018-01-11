@@ -29,4 +29,7 @@ int[] primes = {2, 3, 5, 7};
 8. double[] temperatures = new double[12];
 the indexes can range from 0 to 11.
 
-9. 
+9. You have an int array variable scores of unknown length.
+Complete the code to get the length of the array. You can assume the scores is not null.
+int length = scores.length;
+
