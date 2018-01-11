@@ -56,4 +56,16 @@ dailyTemps[6] = 101;
 System.out.println(temperatures[6]);
 Output: 78
 
-14. 
+14. Complete the code segment intended to get temperaturesfrom the user and assign the values
+to an array using the companion variable, currentSize, to indicate the number of elements in the array
+double[] temperatures = new double[365];
+int currentSize = 0;
+Scanner in = new Scanner(system.in);
+while(in.hasNextDouble()) {
+	if (currentSize < temperatures.legnth) {
+		temperatures[currentSize] = in.nextDouble();
+		currentSize++;
+	}
+}
+
+15.
