@@ -41,3 +41,19 @@ scores[scores.legnth - 1] = 98;
 Complete the statement to print the first element of the array (that is, the element ad index 0).
 You can assume the scores variable is not null.
 System.out.println(scores[0]);
+
+12. What is printed by this segment code?
+int[] tempratures = {65, 71, 68, 85, 87, 89, 78};
+int[] dailyTemps = temperatures;
+dailyTemps[6] = 101;
+System.out.println(temperatures[6]);
+Output: 101
+
+13. What is printed by this segment code?
+int[] tempratures = {65, 71, 68, 85, 87, 89, 78};
+int[] dailyTemps = Arrays.copyOf(temperatures, tempratures.length);
+dailyTemps[6] = 101;
+System.out.println(temperatures[6]);
+Output: 78
+
+14. 
