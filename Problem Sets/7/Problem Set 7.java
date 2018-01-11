@@ -33,3 +33,5 @@ the indexes can range from 0 to 11.
 Complete the code to get the length of the array. You can assume the scores is not null.
 int length = scores.length;
 
+10. Write code to assign 98 to the last element of the array "scores". scores is of unknown length.
+scores[scores.legnth - 1] = 98;
