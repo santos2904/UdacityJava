@@ -96,5 +96,32 @@ public class ArrayUtil
     }
 }
 
-17. 
+17. // Complete this method to return the number of zeros in the int array
+// parameter "values"
 
+public class Util
+{
+    public int getCount(int[] values)
+    {
+        int count = 0;
+        for (int current : values)
+        {
+            // TODO: count the number of zeros in values
+            if (current == 0) {
+                count ++;
+            }
+        }
+        return count;
+    }
+}
+
+18. Given the following array
+int[] values = {1, 2, 3, 4, 5, 4, 3, 2, 1, 9};
+What is the value of the sum after the following for loop completes?
+int sum = 0;
+for (int i = 0; i < 9; i++) {
+	sum = sum + values[i];
+}
+Output: 25
+
+19. 
