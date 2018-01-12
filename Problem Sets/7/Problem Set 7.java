@@ -124,4 +124,13 @@ for (int i = 0; i < 9; i++) {
 }
 Output: 25
 
-19. 
+19. Given the following array
+int[] values = {1, 2, 3, 4, 5, 4, 3, 2, 1, 9};
+What is the value of the sum after the following for loop completes?
+int sum = 0;
+for (int i = 9; i >= 0; i--) {
+	sum = sum + values[i];
+}
+Output: 34
+
+20. 
