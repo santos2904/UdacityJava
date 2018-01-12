@@ -47,9 +47,14 @@ public class ArrayMethods
      */
     public void replaceWithLargerNeighbor()
     {
-        for (int i = 0; )
-
-
+        for (int i = 1; i < list.length - 1; i++) {
+            if (list[i - 1].compareTo(list[i + 1]) > 0) {
+                list[i] = list[i - 1];
+            }
+            else {
+                list[i] = list[i + 1];
+            }
+        }
     }
 
     /**
@@ -61,6 +66,13 @@ public class ArrayMethods
     public int countDuplicates()
     {
         int duplicates = 0;
+        for (int i = 0; i < list.length - 1; i++) {
+            for (int j = i + 1; j < list.length; j++) {
+                if (list[j].compareTo(list[i]) == 0) {
+                    duplicates++;
+                }
+            }
+        }
 
         return duplicates;
     }
@@ -72,7 +84,16 @@ public class ArrayMethods
     public void xyzToFront()
     {
         int insertAt = 0;
-
+        for (int i = 0; i < list.length; i++) {
+            if (list[i].startsWith("x") || list[i].startsWith("y") || list[i].startsWith("z")) {
+                String temp = list[i];
+                for (int j = i; j > insertAt; j--) {
+                    list[j] = list[j - 1];
+                }
+                list[insertAt] = temp;
+                insertAt++;
+            }
+        }
     }
 
     /**
@@ -81,6 +102,6 @@ public class ArrayMethods
      */
     public String toString()
     {
-        return list.toString();
+        return Arrays.toString(list);
     }
 }
