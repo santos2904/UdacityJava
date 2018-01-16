@@ -22,6 +22,7 @@
 //Note: the tester uses code we have not covered to get the values from
 //the website. You can just ignore it and think of it as the plumbing that
 //gets you a double[]
+
 public class TemperatureNormalizer {
 
     private double[] data;
