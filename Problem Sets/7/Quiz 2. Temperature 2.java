@@ -48,5 +48,12 @@ public class TemperatureDifferenceCalculator {
      * @return the minimum difference
      */
     public double minDifference() {
-
+        double min = Math.abs(data[1] - data[0]);
+        for (int i = 0; i < data.length - 1; i++) {
+            if (Math.abs(data[i + 1] - data[i]) < min) {
+                min = Math.abs(data[i + 1] - data[i]);
+            }
+        }
+        return min;
+    }
 }
