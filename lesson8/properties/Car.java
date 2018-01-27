@@ -51,4 +51,21 @@ public class Car
     {
         return passengers.toString();
     }
+	
+	/**
+		Sets the driverName of the car.
+		@param name is the new name
+	*/
+	public void setDriverName(String name)
+	{
+		driverName = name;
+	}
+	
+	/**
+		Gets the name of the driver.
+		@return the name of the driver
+	*/
+	public String getDriverName(){
+		return driverName;
+	}
 }
