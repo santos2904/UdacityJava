@@ -28,7 +28,7 @@ public class TemperatureNormalizer {
     private double[] data;
 
     /**
-     * Constructs a TemperatureNormalizer with the given array
+     * Constructs a TemperatureNormalizer with the given array 
      *
      * @param the array to process
      */
