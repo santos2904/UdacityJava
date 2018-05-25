@@ -19,7 +19,6 @@ public class HomeworkScores {
 
     /**
      * Adds a score.
-     *
      * @param score the score to add
      */
     public void addScore(double score) {
